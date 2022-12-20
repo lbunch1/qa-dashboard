@@ -47,6 +47,13 @@ export default function Header() {
               <Link href="/report">Reports</Link>
             }
           </li>
+          <li>
+            {(currentPath.includes('analysis')) ?
+              <Link href="/analysis" className="underline">Analysis</Link>
+              :
+              <Link href="/report">Analysis</Link>
+            }
+          </li>
         </ul>
       </nav>
       <div>
